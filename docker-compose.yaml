@@ -24,6 +24,7 @@ services:
             MYSQL_RANDOM_ROOT_PASSWORD: '1'
         volumes:
             - datas:/var/lib/mysql
+            - ./dumpSQL/exampledb.sql:/docker-entrypoint-initdb.d/dump.sql
 
     phpmyadmin:
         image: phpmyadmin
