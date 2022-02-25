@@ -23,7 +23,7 @@ services:
             MYSQL_PASSWORD: examplepass
             MYSQL_RANDOM_ROOT_PASSWORD: '1'
         volumes:
-            - datas:/var/lib/mysql
+            #- datas:/var/lib/mysql
             - ./dumpSQL/exampledb.sql:/docker-entrypoint-initdb.d/dump.sql
 
     phpmyadmin:
@@ -34,5 +34,5 @@ services:
         environment:
             - PMA_ARBITRARY=1
 
-volumes:
-    datas:
+#volumes:
+    #datas:
