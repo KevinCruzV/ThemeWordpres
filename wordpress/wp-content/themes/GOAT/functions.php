@@ -27,7 +27,7 @@ function GOAT_theme_bootstrap(){
  * The file Hooking is style.css
  */
 function GOAT_theme_style(){
-	wp_enqueue_script('style','style.css');
+	wp_enqueue_style('style','style.css');
 }
 
 function GOAT_title_separator(){
