@@ -5,22 +5,13 @@
 
 
 
-;
-
-function wpgoat_theme_support()
-{
-    add_theme_support( 'title-tag' );
-    add_theme_support('post-thumbnnails');
-    add_theme_support('menus');
-}
-
-register_nav_menus(
-    array('primary-menu' => 'Top Menu')
-);
-
 function GOAT_theme_support(){
 	add_theme_support( 'title-tag' );
 	add_theme_support('post-thumbnails');
+	add_theme_support('menus');
+	register_nav_menus(
+		array('primary-menu' => 'Top Menu')
+	);
 }
 
 /*
