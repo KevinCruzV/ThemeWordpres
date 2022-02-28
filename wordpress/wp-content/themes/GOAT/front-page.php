@@ -1,0 +1,34 @@
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty
+ * @since Twenty Twenty 1.0
+ */
+
+get_header();
+?>
+
+
+<?php if(have_posts()) :?>
+
+	<?php while (have_posts()) : the_post();?>
+		<?php the_title('<h2>', '</h2>'); ?>
+
+        <button><a href="<?= get_post_type_archive_link('post');?>"> Liste articles </a></button>
+
+	<?php endwhile;?>
+<?php else: ?>
+	<h2>Il n'y a pas de post</h2>
+<?php endif;?>
+
+<?php
+get_footer();
