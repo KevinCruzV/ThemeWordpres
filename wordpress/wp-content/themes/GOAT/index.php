@@ -34,6 +34,7 @@ get_header();
            </div>
        </div>
 	<?php endwhile;?>
+	<?php the_posts_pagination(); ?>
 <?php else: ?>
         <h2>Il n'y a pas de post</h2>
 <?php endif;?>

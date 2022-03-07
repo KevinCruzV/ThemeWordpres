@@ -9,8 +9,11 @@
 </head>
 <body>
     
-<?php wp_nav_menu([
+<?php
+wp_nav_menu([
     'theme_location' => 'header',
     'menu_class' => 'test',
     'container' => false
 ]); ?>
+
+<?php get_search_form();?>

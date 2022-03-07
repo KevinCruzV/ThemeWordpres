@@ -12,6 +12,8 @@ function GOAT_theme_support(){
 	register_nav_menus(
 		array('primary-menu' => 'Top Menu')
 	);
+
+	register_nav_menu('footer', 'Pied de page');
 }
 
 /*
@@ -34,6 +36,7 @@ function GOAT_title_separator(){
 	return '|';
 
 }
+
 
 add_filter('document_title_separator','GOAT_title_separator');
 add_action('after_setup_theme', 'GOAT_theme_support');
