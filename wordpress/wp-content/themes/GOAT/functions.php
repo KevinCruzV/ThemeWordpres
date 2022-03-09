@@ -36,12 +36,33 @@ function GOAT_title_separator(){
 	return '|';
 
 }
+function GOAT_register_style_taxonomy(){
+
+	$labels = [
+		'name' => 'Styles',
+		'singular_name' => 'Style',
+		'search_items' => 'Rechercher style',
+		'all_items' => 'Tous les styles'
+
+	];
+
+	$args = [
+		'labels' => $labels,
+		'public' => true,
+		'hierarchical' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true
+	];
+
+	register_taxonomy('style',['post'],$args);
+}
 
 
 add_filter('document_title_separator','GOAT_title_separator');
 add_action('after_setup_theme', 'GOAT_theme_support');
 add_action('wp_enqueue_scripts','GOAT_theme_bootstrap');
 add_action('wp_enqueue_scripts','GOAT_theme_style');
+add_action('init', 'GOAT_register_style_taxonomy');
 
 
 
