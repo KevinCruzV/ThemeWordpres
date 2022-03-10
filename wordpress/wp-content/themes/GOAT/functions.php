@@ -1,19 +1,16 @@
 <?php
 
-
-
-
-
-
 function GOAT_theme_support(){
+
 	add_theme_support( 'title-tag' );
 	add_theme_support('post-thumbnails');
 	add_theme_support('menus');
+
 	register_nav_menus(
-		array('primary-menu' => 'Top Menu')
+		array('header' => 'Header ')
 	);
 
-	register_nav_menu('footer', 'Pied de page');
+	register_nav_menu('footer', 'Footer');
 }
 
 /*
