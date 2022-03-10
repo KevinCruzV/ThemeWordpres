@@ -21,14 +21,16 @@ function GOAT_theme_support(){
  */
 function GOAT_theme_bootstrap(){
 	wp_enqueue_script('Bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+	
 }
 
 /*
  * Style of the theme
  * The file Hooking is style.css
  */
-function GOAT_theme_style(){
-	wp_enqueue_style('style','style.css');
+function GOAT_theme_scripts(){
+	wp_enqueue_style('StyleGoat', get_template_directory_uri()."/assets/css/main.css", array(), null );
+	wp_enqueue_script( 'ScriptGoat', get_template_directory_uri(). "/js/exemple.js", array('jquery'), false );
 }
 
 function GOAT_title_separator(){
@@ -107,7 +109,7 @@ add_action( 'init', 'GOAT_register_habitation_cpt' );
 add_filter('document_title_separator','GOAT_title_separator');
 add_action('after_setup_theme', 'GOAT_theme_support');
 add_action('wp_enqueue_scripts','GOAT_theme_bootstrap');
-add_action('wp_enqueue_scripts','GOAT_theme_style');
+add_action('wp_enqueue_scripts','GOAT_theme_scripts');
 add_action('init', 'GOAT_register_style_taxonomy');
 add_action('after_switch_theme', function (){
 	wp_insert_term('Maison', 'Style');

@@ -21,21 +21,11 @@ get_header();
 
 <?php if(have_posts()) :?>
 
-    <?php while (have_posts()) : the_post();?>
-       <div class="col">
-           <div class="card">
-               <img src="<?php the_post_thumbnail_url();?>" class="card-img-top">
-                <div class="card-body">
-                    <?php the_title('<h2>', '</h2>'); ?>
-                    <small><?php the_author(); ?></small>
-                    <p><?php the_excerpt();?></p>
-                    <button><a href="<?php the_permalink();?>"> Voir plus </a></button>
-                </div>
-           </div>
-       </div>
-	<?php endwhile;?>
-	<?php the_posts_pagination(); ?>
-<?php else: ?>
+    <?php while (have_posts()) : the_post();
+      get_template_part('template-parts/post-card');
+	endwhile;
+	 the_posts_pagination();
+    else: ?>
         <h2>Il n'y a pas de post</h2>
 <?php endif;?>
 
