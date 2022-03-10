@@ -15,7 +15,7 @@
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="AldibBNB">
             <?php
             wp_nav_menu([
-                'theme_location' => 'Header',
+                'theme_location' => 'header',
                 'menu_class' => 'menu-desktop__nav-list',
                 'order' => 'DESC'
             ]); ?>
