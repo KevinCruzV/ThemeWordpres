@@ -1,0 +1,36 @@
+body{
+    background: #513F75;
+    padding: 0 5vw;
+    font-family: 'Popping', sans-serif;
+
+    header{
+        
+        .menu-desktop{
+            display: flex; flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+    
+            &__nav{
+                display: flex; flex-direction: row;
+                align-items: center;
+                
+                img{
+                    margin-right: 80px;
+                }
+    
+                .menu-header-menu-container{
+    
+                    ul{
+                        display: flex; flex-direction: row;
+                    }
+                }
+            }
+    
+            &__user{
+                display: flex; flex-direction: row;
+                justify-content: center; align-items: center;
+            }
+        }
+    }
+}
