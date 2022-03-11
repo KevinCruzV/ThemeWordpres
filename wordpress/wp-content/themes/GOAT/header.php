@@ -18,16 +18,15 @@
                 'theme_location' => 'header',
                 'menu_class' => 'menu-desktop__nav-list',
             ]); ?>
-    
             </div>
-            
-    
             <div class="menu-desktop__user">
                 <a class="menu-desktop__user-account" href="/mon-compte">Mon compte</a>
                 <a class="menu-dekstop__user-cart" href="/cart">
                     <img src="<?php echo get_template_directory_uri();?>/assets/img/cart.svg" alt="cart" class="cart">
                 </a>
             </div>
+    
+
         </nav>
     </header>
     

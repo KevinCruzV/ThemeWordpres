@@ -17,53 +17,85 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 body {
   background: #513F75;
   padding: 0 5vw;
-  font-family: 'Popping', sans-serif; }
-  body header .menu-desktop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    body header .menu-desktop__nav {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      body header .menu-desktop__nav img {
-        margin-right: 80px; }
-      body header .menu-desktop__nav .menu-header-menu-container ul {
-        display: flex;
-        flex-direction: row; }
-    body header .menu-desktop__user {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
+  font-family: "Popping", sans-serif;
+}
+body header .menu-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 39px;
+  margin-bottom: 46px;
+}
+body header .menu-desktop__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body header .menu-desktop__nav img {
+  margin-right: 80px;
+}
+body header .menu-desktop__nav .menu-desktop__nav-list ul {
+  display: flex;
+  flex-direction: row;
+}
+body header .menu-desktop__nav .menu-desktop__nav-list ul li {
+  margin-left: 39px;
+}
+body header .menu-desktop__nav .menu-desktop__nav-list ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+body header .menu-desktop__nav .menu-desktop__nav-list ul li a:hover {
+  color: #51D6C7;
+}
+body header .menu-desktop__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body header .menu-desktop__user a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  margin-right: 21px;
+}
 
 /*# sourceMappingURL=main.css.map */

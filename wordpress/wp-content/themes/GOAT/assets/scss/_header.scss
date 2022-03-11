@@ -4,11 +4,13 @@ body{
     font-family: 'Popping', sans-serif;
 
     header{
-        
+
         .menu-desktop{
             display: flex; flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            margin-top: 39px;
+            margin-bottom: 46px;
 
     
             &__nav{
@@ -18,18 +20,35 @@ body{
                 img{
                     margin-right: 80px;
                 }
-    
-                .menu-header-menu-container{
-    
+                .menu-desktop__nav-list{
                     ul{
                         display: flex; flex-direction: row;
+                        li{
+                            margin-left: 39px;
+                            a{
+                                color: white;
+                                text-decoration: none;
+                                font-size: 1.125rem;
+                                &:hover{
+                                    color: #51D6C7;
+                                }
+                            }
+                        }
                     }
                 }
             }
+
+
     
             &__user{
                 display: flex; flex-direction: row;
                 justify-content: center; align-items: center;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.125rem;
+                    margin-right: 21px;
+                }
             }
         }
     }
