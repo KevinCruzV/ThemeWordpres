@@ -1,10 +1,5 @@
 <?php
 
-
-
-
-
-
 function GOAT_theme_support(){
 	add_theme_support( 'title-tag' );
 	add_theme_support('post-thumbnails');
@@ -36,6 +31,7 @@ function GOAT_title_separator(){
 	return '|';
 
 }
+
 function GOAT_register_style_taxonomy(){
 
 	$labels = [
@@ -113,5 +109,6 @@ add_action('after_switch_theme', function (){
 	wp_insert_term('Maison', 'Style');
 	flush_rewrite_rules();
 });
+
 
 
