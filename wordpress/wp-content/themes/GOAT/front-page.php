@@ -16,19 +16,49 @@
 
 get_header();
 ?>
+    <div class="homePage">
+        <section class="ideaSection">
+            <div class="ideaText">
+                <h1>Des idées pour votre prochain voyage !</h1>
+                <a href="#">Voir toutes les destinations</a>
+            </div>
+			<?php if ( have_posts() ) : ?>
+                <div class="ideaContainer">
+					<?php while ( have_posts() ) : the_post(); ?>
+                        <div class="idea">
+							<?php the_post_thumbnail( 'homepage-thumb' ) ?>
+							<?php the_title( '<h2>', '</h2>' ); ?>
+                            <button><a href="<?= get_post_type_archive_link( 'post' ); ?>"> Voir les biens en
+                                    location </a></button>
+                        </div>
+					<?php endwhile; ?>
+                </div>
+			<?php else: ?>
+                <h2>Il n'y a pas de post</h2>
+			<?php endif; ?>
+        </section>
+        <section class="bestSection">
+            <div class="bestText">
+                <h1>Les mieux notées !</h1>
+                <a href="#">Voir tous les biens</a>
+            </div>
+		    <?php if ( have_posts() ) : ?>
+                <div class="bestContainer">
+				    <?php while ( have_posts() ) : the_post(); ?>
+                        <div class="best">
+						    <?php the_post_thumbnail( 'homepage-thumb' ) ?>
+						    <?php the_title( '<h2>', '</h2>' ); ?>
+                            <?php the_excerpt('<p>', '</p>') ?>
+                            <button><a href="<?= get_post_type_archive_link( 'post' ); ?>"> Voir les disponibilités</a></button>
+                        </div>
+				    <?php endwhile; ?>
+                </div>
+		    <?php else: ?>
+                <h2>Il n'y a pas de post</h2>
+		    <?php endif; ?>
+        </section>
+    </div>
 
-
-<?php if(have_posts()) :?>
-
-	<?php while (have_posts()) : the_post();?>
-		<?php the_title('<h2>', '</h2>'); ?>
-
-        <button><a href="<?= get_post_type_archive_link('post');?>"> Liste articles </a></button>
-
-	<?php endwhile;?>
-<?php else: ?>
-	<h2>Il n'y a pas de post</h2>
-<?php endif;?>
 
 <?php
 get_footer();

@@ -132,4 +132,176 @@ body header .menu-desktop__user a {
   border-left: 1px solid #51D6C7;
 }
 
+.homePage h1 {
+  font-size: 2.25rem;
+  color: white;
+}
+.homePage p {
+  color: #513F75;
+  padding-left: 21px;
+}
+.homePage h2 {
+  font-size: 2.25rem;
+  padding-top: 11px;
+  padding-left: 21px;
+}
+.homePage a {
+  text-decoration: none;
+  color: #513F75;
+}
+.homePage a:hover {
+  color: white;
+}
+.homePage button {
+  background-color: transparent;
+  font-size: 1.125rem;
+  border: none;
+  margin-left: 21px;
+  margin-bottom: 21px;
+}
+.homePage .ideaSection {
+  width: 100vw;
+  margin-top: 98px;
+  background-color: #51D6C7;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.homePage .ideaSection a {
+  text-decoration: none;
+  color: #513F75;
+}
+.homePage .ideaSection .ideaText {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin: 0px 90px;
+  padding-bottom: 56px;
+}
+.homePage .ideaSection .ideaText h1 {
+  font-size: 2.25rem;
+  color: white;
+}
+.homePage .ideaSection .ideaContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0px 90px;
+  padding-bottom: 56px;
+}
+.homePage .ideaSection .ideaContainer .idea {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 367px;
+}
+.homePage .ideaSection .ideaContainer .idea img {
+  border-radius: 20px;
+}
+.homePage .bestSection {
+  width: 100vw;
+  margin-top: -14px;
+  background-color: #FBD8E6;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.homePage .bestSection .bestText {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin: 0px 90px;
+  padding-bottom: 56px;
+}
+.homePage .bestSection .bestContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0px 90px;
+  padding-bottom: 67px;
+}
+.homePage .bestSection .bestContainer .best {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 367px;
+}
+.homePage .bestSection .bestContainer .best h2 {
+  margin-bottom: 16px;
+}
+.homePage .bestSection .bestContainer .best p {
+  max-width: 322px;
+  margin-bottom: 23px;
+}
+.homePage .bestSection .bestContainer .best img {
+  border-radius: 20px;
+}
+.homePage .bestSection .bestContainer .best button {
+  background-color: #51D6C7;
+  border-radius: 13px;
+  font-size: 0.875rem;
+  width: 217px;
+  height: 39px;
+}
+
+footer {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: white;
+  height: 201px;
+  width: 100vw;
+  color: #513F75;
+}
+footer .posirelative {
+  position: relative;
+  top: 20%;
+}
+footer .paddingleft {
+  padding-left: 46px;
+}
+footer p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  max-width: 267px;
+  font-weight: lighter;
+}
+footer strong {
+  font-weight: bold;
+}
+footer h3 {
+  margin-bottom: 8px;
+}
+footer h2 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+footer a {
+  font-size: 1rem;
+  color: #513F75;
+  margin-bottom: 8px;
+}
+footer .footerContainer {
+  display: flex;
+  margin: 0 90px;
+}
+footer .footerContainer .footerInfo {
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 3px solid rgba(81, 63, 117, 0.3);
+  height: 150px;
+  margin-top: 15px;
+  margin-left: 46px;
+}
+
 /*# sourceMappingURL=main.css.map */
