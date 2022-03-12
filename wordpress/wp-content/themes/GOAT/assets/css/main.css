@@ -98,4 +98,38 @@ body header .menu-desktop__user a {
   margin-right: 21px;
 }
 
+.searchBar h1 {
+  font-size: 2.25rem;
+  color: white;
+  margin-bottom: 21px;
+}
+.searchBar form {
+  display: flex;
+  background-color: white;
+  height: 58px;
+  border-radius: 20px;
+}
+.searchBar form input {
+  background-color: transparent;
+  border: 0px solid;
+  color: #E3EAFF;
+  height: 38px;
+  font-weight: bold;
+  border-bottom: 1px solid #51D6C7;
+  font-size: 1.25rem;
+  margin-left: 31px;
+  padding-top: 15px;
+}
+.searchBar form input:focus {
+  outline: none;
+}
+.searchBar form button {
+  background-color: transparent;
+  border: 0px solid;
+  height: 100%;
+  color: #CCC;
+  margin-left: 29px;
+  border-left: 1px solid #51D6C7;
+}
+
 /*# sourceMappingURL=main.css.map */
