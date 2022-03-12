@@ -132,4 +132,123 @@ body header .menu-desktop__user a {
   border-left: 1px solid #51D6C7;
 }
 
+.homePage h1 {
+  font-size: 2.25rem;
+  color: white;
+}
+.homePage p {
+  color: #513F75;
+  padding-left: 21px;
+}
+.homePage h2 {
+  font-size: 2.25rem;
+  padding-top: 11px;
+  padding-left: 21px;
+}
+.homePage a {
+  text-decoration: none;
+  color: #513F75;
+}
+.homePage a:hover {
+  color: white;
+}
+.homePage button {
+  background-color: transparent;
+  font-size: 1.125rem;
+  border: none;
+  margin-left: 21px;
+  margin-bottom: 21px;
+}
+.homePage .ideaSection {
+  width: 100vw;
+  margin-top: 98px;
+  background-color: #51D6C7;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.homePage .ideaSection a {
+  text-decoration: none;
+  color: #513F75;
+}
+.homePage .ideaSection .ideaText {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin: 0px 90px;
+  padding-bottom: 56px;
+}
+.homePage .ideaSection .ideaText h1 {
+  font-size: 2.25rem;
+  color: white;
+}
+.homePage .ideaSection .ideaContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0px 90px;
+  padding-bottom: 56px;
+}
+.homePage .ideaSection .ideaContainer .idea {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 367px;
+}
+.homePage .ideaSection .ideaContainer .idea img {
+  border-radius: 20px;
+}
+.homePage .bestSection {
+  width: 100vw;
+  margin-top: -14px;
+  background-color: #FBD8E6;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.homePage .bestSection .bestText {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin: 0px 90px;
+  padding-bottom: 56px;
+}
+.homePage .bestSection .bestContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0px 90px;
+  padding-bottom: 67px;
+}
+.homePage .bestSection .bestContainer .best {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 367px;
+}
+.homePage .bestSection .bestContainer .best h2 {
+  margin-bottom: 16px;
+}
+.homePage .bestSection .bestContainer .best p {
+  max-width: 322px;
+  margin-bottom: 23px;
+}
+.homePage .bestSection .bestContainer .best img {
+  border-radius: 20px;
+}
+.homePage .bestSection .bestContainer .best button {
+  background-color: #51D6C7;
+  border-radius: 13px;
+  font-size: 0.875rem;
+  width: 217px;
+  height: 39px;
+}
+
 /*# sourceMappingURL=main.css.map */
