@@ -1,5 +1,8 @@
 <?php
 
+require_once 'classes/Banner.php';
+
+
 function GOAT_theme_support(){
 
 	add_theme_support( 'title-tag' );
@@ -85,6 +88,7 @@ function GOAT_register_habitation_cpt() {
 		"description"           => "CPT pour des habitation",
 		"public"                => true,
 		"show_in_rest"          => true,
+		"menu_icon"             => 'dashicons-building',
 		"rest_base"             => "",
 		"rest_controller_class" => "WP_REST_Posts_Controller",
 		"has_archive"           => true,
@@ -101,6 +105,10 @@ function GOAT_register_habitation_cpt() {
 
 	register_post_type('habitation', $args);
 }
+
+$Banner = new Banner();
+
+
 
 
 add_action( 'init', 'GOAT_register_habitation_cpt' );

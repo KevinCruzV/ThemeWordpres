@@ -1,7 +1,4 @@
 <?php
-/*
-* Template Name: Maison
-*/
 get_header();
 ?>
 
@@ -21,7 +18,7 @@ get_header();
 			</div>
 		<?php endwhile;?>
 	</div>
-	<?= the_posts_pagination(); ?>
+
 <?php else: ?>
 	<h2>Il n'y a pas de post</h2>
 <?php endif;?>
