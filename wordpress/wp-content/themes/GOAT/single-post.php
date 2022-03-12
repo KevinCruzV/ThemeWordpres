@@ -16,25 +16,31 @@
 
 get_header();
 ?>
+<div class="singlePost">
+	<?php if(have_posts()) :?>
 
-<?php if(have_posts()) :?>
+		<?php while (have_posts()) : the_post();?>
+            <div class="singlePostContainer">
+	            <?php the_post_thumbnail( 'medium_large' ) ?>
+                <div class="singlePostInfo">
+					<?php the_title('<h2>', '</h2>'); ?>
+                    <p> Poster par: <small><?php the_author(); ?></small></p>
 
-	<?php while (have_posts()) : the_post();?>
+                        <span><?php the_content();?></span>
+                        <p class="priceNight"><?= get_post_meta(get_the_ID(),'house_price',true) ?> / nuit</p>
 
-		<div class="card">
-			<img src="<?php the_post_thumbnail_url();?>" class="card-img-top" alt="image">
-			<div class="card-body">
-				<?php the_title('<h2>', '</h2>'); ?>
-				<small><?php the_author(); ?></small>
-				<p class="text-card"><?php the_content();?></p>
-				<p class="text-card"><small>Écrit le : <?php the_date();?></small></p>
-			</div>
-		</div>
+                   <!-- <p class="text-card"><small>Écrit le : <?php the_date();?></small></p> -->
 
-	<?php endwhile;?>
-<?php else: ?>
-	<h2>Il n'y a pas de post</h2>
-<?php endif;?>
+
+                </div>
+            </div>
+
+		<?php endwhile;?>
+	<?php else: ?>
+        <h2>Il n'y a pas de post</h2>
+	<?php endif;?>
+</div>
+
 
 <?php
 get_footer();

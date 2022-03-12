@@ -15,6 +15,7 @@
  */
 
 get_header();
+get_search_form();
 ?>
     <div class="homePage">
         <section class="ideaSection">

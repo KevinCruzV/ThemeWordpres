@@ -304,4 +304,36 @@ footer .footerContainer .footerInfo {
   margin-left: 46px;
 }
 
+.singlePost {
+  color: white;
+}
+.singlePost p {
+  margin-bottom: 20px;
+}
+.singlePost .singlePostContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.singlePost .singlePostContainer img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.singlePost .singlePostContainer .singlePostInfo h2 {
+  font-size: 1.875rem;
+  margin-bottom: 10px;
+}
+.singlePost .singlePostContainer .singlePostInfo p {
+  width: 50vw;
+}
+.singlePost .singlePostContainer .singlePostInfo .priceNight {
+  background-color: #51D6C7;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 15px;
+}
+
 /*# sourceMappingURL=main.css.map */
