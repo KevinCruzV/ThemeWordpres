@@ -21,6 +21,8 @@
                 'theme_location' => 'header',
                 'menu_class' => 'menu-desktop__nav-list',
             ]); ?>
+
+             <?php get_search_form();?>
             </div>
             <div class="menu-desktop__user">
                 <a class="menu-desktop__user-account" href="/login">Mon compte</a>
