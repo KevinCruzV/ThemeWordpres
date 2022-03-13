@@ -20,7 +20,7 @@ register_activation_hook(__FILE__, function (){
 	]);
 });
 
-require_once ('ThemeWordpres/wordpress/wp-content/themes/GOAT/classes/AddHabitation.php');
+//require ('../../themes/GOAT/classes/AddHabitation.php');
 
 
 
