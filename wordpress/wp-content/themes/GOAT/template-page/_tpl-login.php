@@ -43,6 +43,15 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 <?php
-$log = filter_input(INPUT_POST)
+$log = filter_input( INPUT_POST, 'log', FILTER_SANITIZE_SPECIAL_CHARS );
+$pwd = filter_input( INPUT_POST, 'pwd', FILTER_SANITIZE_SPECIAL_CHARS );
+$rememeberme = filter_input( INPUT_POST, 'rememberme', FILTER_SANITIZE_SPECIAL_CHARS );
+
+wp_insert_user(array(
+        'user_pass' => $pwd,
+        'user_login' => $log,
+        'role' => 'subscriber'
+
+))
 
 ?>
