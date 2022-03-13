@@ -13,7 +13,7 @@ get_header(); ?>
     <h1>Se connecter</h1>
 
     <div>
-        <form method="post" action="http://example.com/wp-login.php" id="loginform" name="loginform">
+        <form method="post" id="loginform" name="loginform">
 
             <p>
                 <label for="user_login">Identifiant</label>
@@ -42,3 +42,7 @@ get_header(); ?>
 </section>
 
 <?php get_footer(); ?>
+<?php
+$log = filter_input(INPUT_POST)
+
+?>
