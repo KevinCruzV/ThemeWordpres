@@ -25,6 +25,9 @@
                 <a class="menu-dekstop__user-cart" href="/cart">
                     <img src="<?php echo get_template_directory_uri();?>/assets/img/cart.svg" alt="cart" class="cart">
                 </a>
+            <div><?php global $current_user;
+	            wp_get_current_user() ;
+	            echo "Hello" . " " . $current_user->user_login; ?></div>
             </div>
         </nav>
     </header>

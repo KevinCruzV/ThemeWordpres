@@ -4,10 +4,10 @@ Template Name: Login
 */
 ?>
 <?php get_header() ?>
-<h2>Login</h2>
+<h2>Inscription</h2>
 <form id="account-creation" method="post">
 
-    <label for="login">Login: </label>
+    <label for="login">Name: </label>
     <input type="text" name="login" id="login" placeholder="login" required>
 
     <label for="email">Email: </label>
@@ -16,9 +16,11 @@ Template Name: Login
     <label for="password">Password: </label>
     <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
 
-    <button type="submit">Login</button>
+    <button type="submit">Inscription</button>
 </form>
+<?php wp_login_form() ?>
 <?php get_footer() ?>
+
 <?php
 // if((isset($_POST["pseudo"]) && isset($_POST["email"]) && isset($_POST["password"]))) {
 
