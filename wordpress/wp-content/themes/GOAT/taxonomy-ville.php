@@ -1,10 +1,13 @@
 <?php
-
+/*
+* Template Name: Ville
+* Template Post Type: page, post
+* Description:
+*/
 
 get_header();
 ?>
 
-	<h1> Yo </h1>
 
 <?php if(have_posts()) :?>
 
