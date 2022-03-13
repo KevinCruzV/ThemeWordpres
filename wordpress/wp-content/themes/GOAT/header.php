@@ -12,7 +12,10 @@
 
         <nav class="menu-desktop">
             <div class="menu-desktop__nav">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="AldibBNB">
+                <a href="<?php echo get_home_url(); ?>">
+                    <img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="AldibBNB">
+                </a>
+                    
             <?php
             wp_nav_menu([
                 'theme_location' => 'header',
@@ -20,7 +23,7 @@
             ]); ?>
             </div>
             <div class="menu-desktop__user">
-                <a class="menu-desktop__user-account" href="/mon-compte">Mon compte</a>
+                <a class="menu-desktop__user-account" href="/login">Mon compte</a>
                 <a class="menu-dekstop__user-cart" href="/cart">
                     <img src="<?php echo get_template_directory_uri();?>/assets/img/cart.svg" alt="cart" class="cart">
                 </a>
@@ -31,4 +34,3 @@
     </header>
     
 
-<?php get_search_form();?>

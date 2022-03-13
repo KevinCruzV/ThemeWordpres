@@ -4,7 +4,7 @@
 		<div class="card-body">
 			<?php the_title('<h2>', '</h2>'); ?>
 			<p><?php the_excerpt();?></p>
-			<small><?php the_author(); ?></small>
+			<!-- <small><?php the_author(); ?></small> -->
 			<button><a href="<?php the_permalink();?>"> Voir plus </a></button>
 		</div>
 	</div>

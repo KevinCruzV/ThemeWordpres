@@ -52,7 +52,7 @@ table {
 body {
   background: #513F75;
   padding: 0 5vw;
-  font-family: "Popping", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body header .menu-desktop {
   display: flex;
@@ -70,20 +70,21 @@ body header .menu-desktop__nav {
 body header .menu-desktop__nav img {
   margin-right: 80px;
 }
-body header .menu-desktop__nav .menu-header-container ul {
+body header .menu-desktop__nav .menu-header-menu-container ul {
   display: flex;
   flex-direction: row;
 }
-body header .menu-desktop__nav .menu-header-container ul li {
-  margin-left: 39px;
+body header .menu-desktop__nav .menu-header-menu-container ul li {
+  margin-right: 40px;
 }
-body header .menu-desktop__nav .menu-header-container ul li a {
+body header .menu-desktop__nav .menu-header-menu-container ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.125rem;
 }
-body header .menu-desktop__nav .menu-header-container ul li a:hover {
+body header .menu-desktop__nav .menu-header-menu-container ul li a:hover {
   color: #51D6C7;
+  text-decoration: underline;
 }
 body header .menu-desktop__user {
   display: flex;
@@ -302,6 +303,38 @@ footer .footerContainer .footerInfo {
   height: 150px;
   margin-top: 15px;
   margin-left: 46px;
+}
+
+.singlePost {
+  color: white;
+}
+.singlePost p {
+  margin-bottom: 20px;
+}
+.singlePost .singlePostContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.singlePost .singlePostContainer img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.singlePost .singlePostContainer .singlePostInfo h2 {
+  font-size: 1.875rem;
+  margin-bottom: 10px;
+}
+.singlePost .singlePostContainer .singlePostInfo p {
+  width: 50vw;
+}
+.singlePost .singlePostContainer .singlePostInfo .priceNight {
+  background-color: #51D6C7;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
