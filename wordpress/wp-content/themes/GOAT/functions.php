@@ -61,6 +61,32 @@ function GOAT_register_style_taxonomy(){
 }
 
 
+
+
+function GOAT_register_villes_taxonomy(){
+
+	$labels = [
+		'name' => 'Ville',
+		'singular_name' => 'Ville',
+		'search_items' => 'Rechercher Ville',
+		'all_items' => 'Tous les villes'
+
+	];
+
+	$args = [
+		'labels' => $labels,
+		'public' => true,
+		'hierarchical' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true
+	];
+
+	register_taxonomy('ville',['habitation'],$args);
+}
+
+
+
+
 function GOAT_register_habitation_cpt() {
 
 	/**
@@ -77,7 +103,7 @@ function GOAT_register_habitation_cpt() {
 		"edit_item"     => __( "Modifier habitation", "GOAT" ),
 		"new_item"      => __( "Nouvelle habitation", "GOAT" ),
 		"view_item"     => __( "Voir habitation", "GOAT" ),
-		"view_items"    => __( "Voir les livres", "GOAT" ),
+		"view_items"    => __( "Voir les habitations", "GOAT" ),
 		"search_items"  => __( "Recherche une habitation", "GOAT" ),
 		"not_found"     => __( "Aucune habitation trouvé", "GOAT" ),
 	];
@@ -100,7 +126,7 @@ function GOAT_register_habitation_cpt() {
 		"query_var"             => true,
 		"supports"              => [ "title", "custom-fields", "thumbnail", "editor", "excerpt" ],
 		"show_in_graphql"       => false,
-		"taxonomies"            => ['type'],
+		"taxonomies"            => ['type', 'ville'],
 		"capabilities"          => array(
 			'edit_post'         => 'manage_habitations',
 			'read_post'         => 'manage_habitations',
@@ -144,6 +170,7 @@ add_action('after_setup_theme', 'GOAT_theme_support');
 add_action('wp_enqueue_scripts','GOAT_theme_bootstrap');
 add_action('wp_enqueue_scripts','GOAT_theme_scripts');
 add_action('init', 'GOAT_register_style_taxonomy');
+add_action('init', 'GOAT_register_villes_taxonomy');
 
 add_action('after_switch_theme', function (){
 	$admin = get_role('administrator');
