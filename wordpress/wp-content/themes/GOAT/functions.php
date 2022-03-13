@@ -42,8 +42,8 @@ function GOAT_title_separator(){
 function GOAT_register_style_taxonomy(){
 
 	$labels = [
-		'name' => 'Type',
-		'singular_name' => 'Type',
+		'name' => 'modeles',
+		'singular_name' => 'type',
 		'search_items' => 'Rechercher Type',
 		'all_items' => 'Tous les types'
 
@@ -57,7 +57,7 @@ function GOAT_register_style_taxonomy(){
 		'show_admin_column' => true
 	];
 
-	register_taxonomy('type',['habitation'],$args);
+	register_taxonomy('modele',['habitation'],$args);
 }
 
 
@@ -66,8 +66,8 @@ function GOAT_register_style_taxonomy(){
 function GOAT_register_villes_taxonomy(){
 
 	$labels = [
-		'name' => 'Ville',
-		'singular_name' => 'Ville',
+		'name' => 'ville',
+		'singular_name' => 'ville',
 		'search_items' => 'Rechercher Ville',
 		'all_items' => 'Tous les villes'
 
@@ -126,7 +126,7 @@ function GOAT_register_habitation_cpt() {
 		"query_var"             => true,
 		"supports"              => [ "title", "custom-fields", "thumbnail", "editor", "excerpt" ],
 		"show_in_graphql"       => false,
-		"taxonomies"            => ['type', 'ville'],
+		"taxonomies"            => ['modele', 'ville'],
 		"capabilities"          => array(
 			'edit_post'         => 'manage_habitations',
 			'read_post'         => 'manage_habitations',
