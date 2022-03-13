@@ -70,19 +70,19 @@ body header .menu-desktop__nav {
 body header .menu-desktop__nav img {
   margin-right: 80px;
 }
-body header .menu-desktop__nav .menu-header-container ul {
+body header .menu-desktop__nav .menu-header-menu-container ul {
   display: flex;
   flex-direction: row;
 }
-body header .menu-desktop__nav .menu-header-container ul li {
+body header .menu-desktop__nav .menu-header-menu-container ul li {
   margin-right: 40px;
 }
-body header .menu-desktop__nav .menu-header-container ul li a {
+body header .menu-desktop__nav .menu-header-menu-container ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.125rem;
 }
-body header .menu-desktop__nav .menu-header-container ul li a:hover {
+body header .menu-desktop__nav .menu-header-menu-container ul li a:hover {
   color: #51D6C7;
   text-decoration: underline;
 }
@@ -298,7 +298,6 @@ footer .footerContainer {
 }
 footer .footerContainer .footerInfo {
   display: flex;
-  flex-wrap: wrap;
   border-left: 3px solid rgba(81, 63, 117, 0.3);
   height: 150px;
   margin-top: 15px;
@@ -337,10 +336,58 @@ footer .footerContainer .footerInfo {
   border-radius: 15px;
 }
 
-.title-page {
+.presentation-projet {
+  margin-bottom: 60px;
+  margin-top: 90px;
+}
+.presentation-projet .title-page {
   text-align: start;
-  font-size: 2.25rem;
+  font-size: 45px;
   color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.presentation-projet__p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.team-projet {
+  margin-bottom: 50px;
+}
+.team-projet h2 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.team-projet__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-projet__container-cart {
+  text-align: center;
+}
+.team-projet__container-cart img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  background-color: #51D6C7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.team-projet__container-cart h3 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+}
+.team-projet__container-cart h3 strong {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
