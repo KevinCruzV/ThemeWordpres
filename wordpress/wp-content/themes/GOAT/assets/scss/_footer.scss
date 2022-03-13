@@ -3,12 +3,14 @@ footer{
   position: relative;
   left: 50%;
   right: 50%;
+  bottom: 0;
   margin-left: -50vw;
   margin-right: -50vw;
   background-color: white;
   height: 201px;
   width: 100vw;
   color: #513F75;
+
   .posirelative{
     position: relative;
     top: 20%;

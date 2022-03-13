@@ -256,6 +256,7 @@ footer {
   position: relative;
   left: 50%;
   right: 50%;
+  bottom: 0;
   margin-left: -50vw;
   margin-right: -50vw;
   background-color: white;
@@ -388,6 +389,71 @@ footer .footerContainer .footerInfo {
 }
 .team-projet__container-cart h3 strong {
   font-weight: bold;
+}
+
+.presentation-contact {
+  margin-bottom: 60px;
+  margin-top: 90px;
+}
+.presentation-contact .title-page {
+  text-align: start;
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.presentation-contact__container {
+  display: flex;
+  flex-direction: row;
+}
+.presentation-contact__container-info {
+  width: 100%;
+}
+.presentation-contact__container-info h2 {
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.presentation-contact__container-info__inner {
+  padding: 30px;
+  background-color: #51D6C7;
+  border-radius: 15px;
+}
+.presentation-contact__container-info__inner p {
+  color: #513F75;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.presentation-contact__container-info__inner p strong {
+  font-weight: bold;
+}
+.presentation-contact__container-info__inner p a {
+  text-decoration: none;
+  color: #513F75;
+}
+.presentation-contact__container-hr {
+  margin: 0 50px;
+  border-color: #51D6C7;
+}
+.presentation-contact__container-form {
+  width: 100%;
+  height: 100%;
+}
+.presentation-contact__container-form h2 {
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.presentation-contact__container-form__inner {
+  padding: 30px;
+  background-color: #51D6C7;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
