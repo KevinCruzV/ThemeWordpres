@@ -47,10 +47,8 @@ get_search_form();
                 <div class="bestContainer">
 				    <?php while ( have_posts() ) : the_post(); ?>
                         <div class="best">
-						    <?php the_post_thumbnail( 'homepage-thumb' ) ?>
-						    <?php the_title( '<h2>', '</h2>' ); ?>
-                            <?php the_excerpt('<p>', '</p>') ?>
-                            <button><a href="<?= get_post_type_archive_link( 'post' ); ?>"> Voir les disponibilités</a></button>
+	                        <?php get_template_part('template-parts/post-card', 'post')?>
+                           
                         </div>
 				    <?php endwhile; ?>
                 </div>
