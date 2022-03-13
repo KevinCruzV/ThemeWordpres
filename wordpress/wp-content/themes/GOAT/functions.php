@@ -42,10 +42,10 @@ function GOAT_title_separator(){
 function GOAT_register_style_taxonomy(){
 
 	$labels = [
-		'name' => 'Styles',
-		'singular_name' => 'Style',
-		'search_items' => 'Rechercher style',
-		'all_items' => 'Tous les styles'
+		'name' => 'Type',
+		'singular_name' => 'Type',
+		'search_items' => 'Rechercher Type',
+		'all_items' => 'Tous les types'
 
 	];
 
@@ -57,7 +57,7 @@ function GOAT_register_style_taxonomy(){
 		'show_admin_column' => true
 	];
 
-	register_taxonomy('style',['post'],$args);
+	register_taxonomy('type',['habitation'],$args);
 }
 
 
@@ -100,14 +100,41 @@ function GOAT_register_habitation_cpt() {
 		"query_var"             => true,
 		"supports"              => [ "title", "custom-fields", "thumbnail", "editor", "excerpt" ],
 		"show_in_graphql"       => false,
-		"taxonomies"            => ["style"],
+		"taxonomies"            => ['type'],
+		"capabilities"          => array(
+			'edit_post'         => 'manage_habitations',
+			'read_post'         => 'manage_habitations',
+			'delete_post'         => 'manage_habitations'
+		)
 	];
 
 	register_post_type('habitation', $args);
 }
 
-$Banner = new Banner();
 
+add_filter('manage_habitation_posts_columns', function ($col){
+	return array(
+		'cb' => $col['cb'],
+		'title' => $col['title'],
+		'image' => 'Image',
+		'price' => 'Prix',
+		'taxonomy-type' => $col['taxonomy-type'],
+		'date' => $col['date']
+	);
+
+
+});
+add_action('manage_habitation_posts_custom_columns', function ($col, $post_id) {
+	if($col === 'image') {
+
+		the_post_thumbnail('thumbnail', $post_id);
+
+	} elseif ($col === 'price') {
+
+		echo get_post_meta($post_id,'house_price', true);
+	}
+
+}, 10, 2);
 
 
 
@@ -117,9 +144,10 @@ add_action('after_setup_theme', 'GOAT_theme_support');
 add_action('wp_enqueue_scripts','GOAT_theme_bootstrap');
 add_action('wp_enqueue_scripts','GOAT_theme_scripts');
 add_action('init', 'GOAT_register_style_taxonomy');
+
 add_action('after_switch_theme', function (){
-	wp_insert_term('Maison', 'Style');
-	flush_rewrite_rules();
+	$admin = get_role('administrator');
+	$admin->add_cap('manage_habitations');
 });
 
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );

@@ -5,8 +5,10 @@ class Banner {
 
 	const OPTION_GROUP = 'GOAT_group';
 	const SETTING_SECTION = 'GOAT_section';
+	const BANNER_MESSAGE = "";
+	const MENU_PAGE_NAME = "";
 
-    public function __construct()
+	public function __construct()
     {
 	    add_action('admin_menu', [$this, 'addMenu']);
     }
@@ -72,7 +74,7 @@ class Banner {
 		?>
 		<div>
 			<h1><?= get_admin_page_title();?></h1>
-			<form>
+			<form action="option.php" method="post">
 				<?php settings_fields(self::OPTION_GROUP);?>
 				<?php do_settings_fields(self::MENU_PAGE_NAME);?>
 				<?php submit_button();?>
