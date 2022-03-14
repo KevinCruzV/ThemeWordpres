@@ -25,6 +25,7 @@ get_header();
             </div>
 			<?php if ( have_posts() ) : ?>
                 <div class="ideaContainer">
+	                <?php query_posts('posts_per_page=3'); ?>
 					<?php while ( have_posts() ) : the_post(); ?>
                         <div class="idea">
 							<?php the_post_thumbnail( 'homepage-thumb' ) ?>
@@ -45,6 +46,7 @@ get_header();
             </div>
 		    <?php if ( have_posts() ) : ?>
                 <div class="bestContainer">
+	                <?php query_posts('posts_per_page=3'); ?>
 				    <?php while ( have_posts() ) : the_post(); ?>
                         <div class="best">
 	                        <?php get_template_part('template-parts/post-card', 'post')?>
