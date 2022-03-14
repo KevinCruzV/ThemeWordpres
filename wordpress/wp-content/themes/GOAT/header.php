@@ -25,13 +25,23 @@
              
             </div>
             <div class="menu-desktop__user">
+<<<<<<< HEAD
                 <a class="menu-desktop__user-account" href="/login">Mon compte</a>
+=======
+                <a class="menu-desktop__user-account" href="/mon-compte">Mon compte</a>
+                <a class="menu-desktop__user-account" href="/login">Login</a>
+>>>>>>> login
                 <a class="menu-dekstop__user-cart" href="/cart">
                     <img src="<?php echo get_template_directory_uri();?>/assets/img/cart.svg" alt="cart" class="cart">
                 </a>
+                <div><?php global $current_user;
+                        if(is_user_logged_in())
+                        {
+                           wp_get_current_user() ;
+                            echo "Hello" . " " . $current_user->user_login;
+                        }?>
+                </div>
             </div>
-    
-
         </nav>
     </header>
     
