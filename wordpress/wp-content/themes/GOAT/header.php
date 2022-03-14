@@ -41,6 +41,7 @@
                             echo "Hello" . " " . $current_user->user_login;
                         }?>
                 </div>
+                <a href="<?= wp_logout_url('http://localhost:5555') ?>" title="Logout">Logout</a>
             </div>
         </nav>
     </header>
