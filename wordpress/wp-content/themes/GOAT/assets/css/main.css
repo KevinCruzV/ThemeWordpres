@@ -563,7 +563,7 @@ footer .footerContainer .footerInfo {
   display: flex;
   flex-direction: column;
 }
-.login .connexion-container__form form p input {
+.login .connexion-container__form form input {
   background: transparent;
   border-bottom: 1px solid #51D6C7;
   border-top: none;
@@ -574,13 +574,13 @@ footer .footerContainer .footerInfo {
   font-weight: 500;
   font-size: 18px;
 }
-.login .connexion-container__form form p input::placeholder {
+.login .connexion-container__form form input::placeholder {
   background-color: transparent;
   color: #51D6C7;
   font-weight: 500;
   font-size: 18px;
 }
-.login .connexion-container__form form p input:focus {
+.login .connexion-container__form form input:focus {
   background: transparent;
   border-bottom: 1px solid #51D6C7;
   border-top: none;
@@ -602,21 +602,6 @@ footer .footerContainer .footerInfo {
   font-size: 16px !important;
   border-radius: 10px;
   text-transform: uppercase;
-}
-
-.stay-connect {
-  color: #51D6C7;
-  font-weight: 500;
-  margin-right: 20px;
-}
-
-.forgot-password {
-  color: #51D6C7;
-}
-
-.f-col {
-  display: flex;
-  flex-direction: column;
 }
 
 /*# sourceMappingURL=main.css.map */

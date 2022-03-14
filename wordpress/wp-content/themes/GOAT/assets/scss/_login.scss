@@ -24,7 +24,7 @@
         &__form{
             form{
                 display: flex; flex-direction: column;
-                p{
+
                     input{
                         background: transparent;
                         border-bottom: 1px solid #51D6C7;
@@ -52,8 +52,6 @@
                         font-size: 18px;
                         }
 
-                        
-                    }
                 }
             }
         }
@@ -66,16 +64,4 @@
     padding: 5px 20px; text-align: center; 
     font-weight: 800 !important; font-size: 16px !important;
     border-radius: 10px; text-transform: uppercase;
-}
-
-.stay-connect{
-    color: #51D6C7; font-weight: 500; margin-right: 20px;
-}
-
-.forgot-password{
-    color: #51D6C7; 
-}
-
-.f-col{
-    display: flex; flex-direction: column;
 }

@@ -4,20 +4,34 @@ Template Name: Login
 */
 ?>
 <?php get_header() ?>
-<h2>Inscription</h2>
-<form id="account-creation" method="post">
 
-    <label for="login">Name: </label>
-    <input type="text" name="login" id="login" placeholder="login" required>
+<div class="login">
+    <div class="inscription-container">
+        <h1 class="inscription-container__title">Inscription</h1>
+    </div>
 
-    <label for="email">Email: </label>
-    <input type="email" name="email" id="email" placeholder="E-mail" required>
+    <div class="connexion-container">
+        <h1 class="connexion-container__title">Se connecter</h1>
 
-    <label for="password">Password: </label>
-    <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
+        <div class="connexion-container__form">
+            <form id="account-creation" method="post">
+    
+              
+                <input type="text" name="login" id="login" placeholder="login" required>
 
-    <button type="submit">Inscription</button>
-</form>
+                
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+
+                
+                <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
+
+                <button class="btn-submit" type="submit">Inscription</button>
+            </form>
+        </div>
+    </div>
+
+    
+</div>
 <?php wp_login_form() ?>
 <?php get_footer() ?>
 
