@@ -2,7 +2,7 @@
 get_header();
 
 $term_slugs = [];
-$terms = get_the_terms(get_the_ID(),'type');
+$terms = get_the_terms(get_the_ID(),'modele');
 foreach ($terms as $term)
 {
     $term_slugs[] = $term->name;

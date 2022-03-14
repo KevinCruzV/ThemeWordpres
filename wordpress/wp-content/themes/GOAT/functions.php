@@ -182,5 +182,33 @@ function wpdocs_theme_setup() {
 	add_image_size( 'homepage-thumb', 367, 268);
 }
 
+add_action('admin_post_francishuster', function () {
 
+
+	$title =  filter_input( INPUT_POST, 'habitation_title', FILTER_SANITIZE_SPECIAL_CHARS );
+	$description = filter_input( INPUT_POST, 'habitation_description', FILTER_SANITIZE_SPECIAL_CHARS );
+	$price = filter_input( INPUT_POST, 'habitation_price', FILTER_SANITIZE_SPECIAL_CHARS );
+	$type = $_POST['habitation_type'];
+
+	$habitation_args = array(
+		'post_title' => $title,
+		'post_content' => $description,
+		'post_type' => 'habitation',
+		'post_status' => 'pending',
+		'meta_input' => array(
+			'house_price' => $price
+		),
+		'tax_input' => array(
+			'type' => $type
+		)
+	);
+
+	wp_insert_post($habitation_args);
+
+	header('location: /accueil');
+});
+
+add_action('admin_post_nopriv_francishuster', function () {
+	die('coucou pas connecté');
+});
 

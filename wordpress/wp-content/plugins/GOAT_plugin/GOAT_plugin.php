@@ -6,9 +6,11 @@
  * Version: 1
  */
 
-//if(defined('ABSPATH')){
-//	wp_die('acces interdit');
-//}
+use classes\AddHabitation;
+
+if(!defined('ABSPATH')){
+	die('acces interdit');
+}
 
 register_activation_hook(__FILE__, function (){
 	$admin = get_role('administrator');
@@ -20,7 +22,7 @@ register_activation_hook(__FILE__, function (){
 	]);
 });
 
-//require ('../../themes/GOAT/classes/AddHabitation.php');
+require ('classes/AddHabitation.php');
 
 
 
