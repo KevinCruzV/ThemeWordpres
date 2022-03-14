@@ -2,6 +2,7 @@
 /*
 * Template Name:Template page contact
 */
+
 get_header();
     if(have_posts()) :?>
 
@@ -31,9 +32,8 @@ get_header();
             <div class="presentation-contact__container-form">
                 <h2>Nous contacter</h2>
                 <div class="presentation-contact__container-form__inner">
-                    <form>
-
-                    </form>
+                        <form action="<?php the_permalink(); ?>" method="post">
+                        </form>
                 </div>
             </div>
         </div>

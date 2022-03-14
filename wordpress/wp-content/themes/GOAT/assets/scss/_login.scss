@@ -1,0 +1,81 @@
+.login{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    margin-bottom: 20px;
+    
+    .inscription-container{
+        background-color: #51D6C7;
+        border-radius: 15px; padding: 40px;
+
+        &__title{
+            font-weight: bold; font-size: 30px;
+            color: #513F75;
+        }
+    }    
+
+    .connexion-container{
+        &__title{
+            font-weight: bold; font-size: 30px;
+            color: #51D6C7 ;
+            margin-top: 40px; margin-bottom: 20px;
+        }
+
+        &__form{
+            form{
+                display: flex; flex-direction: column;
+                p{
+                    input{
+                        background: transparent;
+                        border-bottom: 1px solid #51D6C7;
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        margin-bottom: 15px;
+                        color: #51D6C7; font-weight: 500;
+                        font-size: 18px; 
+
+                        &::placeholder{
+                            background-color: transparent;
+                            color: #51D6C7; font-weight: 500;
+                            font-size: 18px;
+                        }
+
+                        &:focus{
+                        background: transparent;
+                        border-bottom: 1px solid #51D6C7;
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        margin-bottom: 15px;
+                        color: #51D6C7; font-weight: 500;
+                        font-size: 18px;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn-submit{
+    font-family: 'Poppins',sans-serif;
+    background-color: #51D6C7 !important; color: #513F75 !important;
+    padding: 5px 20px; text-align: center; 
+    font-weight: 800 !important; font-size: 16px !important;
+    border-radius: 10px; text-transform: uppercase;
+}
+
+.stay-connect{
+    color: #51D6C7; font-weight: 500; margin-right: 20px;
+}
+
+.forgot-password{
+    color: #51D6C7; 
+}
+
+.f-col{
+    display: flex; flex-direction: column;
+}

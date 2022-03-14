@@ -456,4 +456,167 @@ footer .footerContainer .footerInfo {
   border-radius: 15px;
 }
 
+.title-page-habitations {
+  text-align: start;
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+.habitations-all {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.card-container {
+  background: #fff;
+  border-radius: 15px;
+}
+.card-container__inner-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.card-container__inner-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #513F75;
+  padding: 20px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+.card-container__inner-txt__container h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+.card-container__inner-txt__container__author {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.card-container__inner-txt__excerpt {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+.card-container__inner-txt__btn {
+  background-color: #51D6C7;
+  color: #513F75;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 15px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.pagination-habitations {
+  text-align: end;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.pagination-habitations .current {
+  color: #fff !important;
+  font-weight: bold !important;
+  font-size: 20px;
+}
+.pagination-habitations .page-numbers {
+  color: #D4D4D4;
+  font-weight: 300;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  margin-bottom: 20px;
+}
+.login .inscription-container {
+  background-color: #51D6C7;
+  border-radius: 15px;
+  padding: 40px;
+}
+.login .inscription-container__title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #513F75;
+}
+.login .connexion-container__title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #51D6C7;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.login .connexion-container__form form {
+  display: flex;
+  flex-direction: column;
+}
+.login .connexion-container__form form p input {
+  background: transparent;
+  border-bottom: 1px solid #51D6C7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 15px;
+  color: #51D6C7;
+  font-weight: 500;
+  font-size: 18px;
+}
+.login .connexion-container__form form p input::placeholder {
+  background-color: transparent;
+  color: #51D6C7;
+  font-weight: 500;
+  font-size: 18px;
+}
+.login .connexion-container__form form p input:focus {
+  background: transparent;
+  border-bottom: 1px solid #51D6C7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 15px;
+  color: #51D6C7;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn-submit {
+  font-family: "Poppins", sans-serif;
+  background-color: #51D6C7 !important;
+  color: #513F75 !important;
+  padding: 5px 20px;
+  text-align: center;
+  font-weight: 800 !important;
+  font-size: 16px !important;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.stay-connect {
+  color: #51D6C7;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.forgot-password {
+  color: #51D6C7;
+}
+
+.f-col {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=main.css.map */

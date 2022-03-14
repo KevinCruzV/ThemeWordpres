@@ -17,6 +17,7 @@
 get_header();
 ?>
     <div class="homePage">
+    <?php get_search_form();?>
         <section class="ideaSection">
             <div class="ideaText">
                 <h1>Des idées pour votre prochain voyage !</h1>
@@ -40,7 +41,7 @@ get_header();
         <section class="bestSection">
             <div class="bestText">
                 <h1>Les mieux notées !</h1>
-                <a href="#">Voir tous les biens</a>
+                <a href="/habitation">Voir tous les biens</a>
             </div>
 		    <?php if ( have_posts() ) : ?>
                 <div class="bestContainer">
