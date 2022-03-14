@@ -70,19 +70,19 @@ body header .menu-desktop__nav {
 body header .menu-desktop__nav img {
   margin-right: 80px;
 }
-body header .menu-desktop__nav .menu-header-menu-container ul {
+body header .menu-desktop__nav .menu-header-container ul {
   display: flex;
   flex-direction: row;
 }
-body header .menu-desktop__nav .menu-header-menu-container ul li {
+body header .menu-desktop__nav .menu-header-container ul li {
   margin-right: 40px;
 }
-body header .menu-desktop__nav .menu-header-menu-container ul li a {
+body header .menu-desktop__nav .menu-header-container ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.125rem;
 }
-body header .menu-desktop__nav .menu-header-menu-container ul li a:hover {
+body header .menu-desktop__nav .menu-header-container ul li a:hover {
   color: #51D6C7;
   text-decoration: underline;
 }

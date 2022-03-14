@@ -5,7 +5,7 @@ $term_slugs = [];
 $terms = get_the_terms(get_the_ID(),'type');
 foreach ($terms as $term)
 {
-    $terms_slug[] = $term->name;
+	$term_slugs[] = $term->name;
 }
 
 
@@ -26,7 +26,7 @@ $house_args = array(
 	    array(
 		    'taxonomy' => 'type',
             'field' => 'slug',
-            'terms' => $terms_slug
+            'terms' => $term_slugs
 	    ),
 
     )

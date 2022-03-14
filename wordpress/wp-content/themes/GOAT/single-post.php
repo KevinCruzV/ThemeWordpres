@@ -17,8 +17,7 @@
 get_header();
 ?>
 <div class="singlePost">
-	<?php if(have_posts()) :?>
-
+	<?php if(have_posts()):?>
 		<?php while (have_posts()) : the_post();?>
             <div class="singlePostContainer">
 	            <?php the_post_thumbnail( 'medium_large' ) ?>
